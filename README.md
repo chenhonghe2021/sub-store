@@ -39,3 +39,14 @@ xhoutfgf		序号和后面的内容之间的分隔符为空格。
 
 (注意：sn 和 xhoutfgf 的值后面是一个空格)
 
+# 完整的修改后的脚本 (版本 3)
+
+我将修改 operator 函数中传递给 jxh 的键，并调整 jxh 函数来确保只有国家名（countryName）用于分组。
+
+使用你提供的参数：#port=on&diy=gjds&diyfgf=-&sn= &xhoutfgf= (空格分隔)，新脚本将产生以下结果：
+原始国家 (分组键)	后缀 (suffixName)	预期结果 (国家连续编号)
+美国	gjds-80	美国 01 gjds-80
+美国	gjds-80	美国 02 gjds-80
+美国	gjds-80	美国 03 gjds-80
+美国	gjds-2053	美国 04 gjds-2053
+德国	gjds-80	德国 01 gjds-80
